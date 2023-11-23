@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-body {
+a {
     text-decoration: none;
 }
 
@@ -121,7 +121,7 @@ body {
 
 .products {
     padding-top: 31px;
-    padding-bottom: 31px;
+    padding-bottom: 60px;
     font-family: Lato;
 }
 
@@ -175,4 +175,17 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin-top: 16px;
+}
+
+.products__all-products {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.products__all-products__text {
+    padding: 15px 39px;
+    border: 1px solid #F16D7F;
+    font-size: 16px;
+    font-weight: 400;
 }
