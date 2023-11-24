@@ -37,6 +37,9 @@ a {
 
 .header__right {
     padding-top: 8px;
+    display: flex;
+    gap: 33px;
+    align-items: center;
 }
 
 .promo {
