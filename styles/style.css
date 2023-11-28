@@ -280,29 +280,52 @@ a {
     }
 
     .promo__text__heading {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .offer {
-        grid-template-columns: repeat(3, 232px);
-        grid-template-rows: 168px 116px;
-        gap: 19px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .offer__card {
+        height: 248px;
+        width: 343px;
+    }
+
+    .offer_wide {
+        height: 111px;
+    }
+
+    .offer_wide img {
+        height: 111px;
+        object-fit: cover;
     }
 
     .catalog {
-        padding-top: 45px;
-        padding-bottom: 70px;
+        padding-top: 0px;
+    }
+
+    .catalog__heading {
+        margin-top: 3px;
     }
 
     .catalog__box {
-        grid-template-columns: repeat(2, 360px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 16px;
-        margin-top: 72px;
+        margin-top: 64px;
+    }
+
+    .catalog__item {
+        width: 360px;
     }
 
     .button-browse {
-        margin-top: 32px;
+        margin-top: 40px;
+        margin-bottom: 25px;
     }
-
-    */
 }
