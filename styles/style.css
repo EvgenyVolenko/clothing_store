@@ -394,12 +394,9 @@ a {
         margin-top: 64px;
     }
 
-    .catalog__item {
-        width: 304px;
-    }
-
     .catalog__item img {
-        height: 355px;
+        width: 304px;
+        height: auto;
     }
 
     .catalog__cart {
