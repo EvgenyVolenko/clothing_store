@@ -149,11 +149,12 @@ a {
 .catalog__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .catalog__item_selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: rgba(58, 56, 56, 0.86);
 }
 
@@ -196,7 +197,6 @@ a {
     gap: 11px;
     align-items: center;
     padding: 8px 16px;
-    margin-bottom: 170px;
 }
 
 .button-browse {
