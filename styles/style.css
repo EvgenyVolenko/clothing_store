@@ -228,13 +228,10 @@ a {
 
     .promo__text__header {
         font-size: 44px;
-        font-weight: 900;
     }
 
     .promo__text__heading {
-        color: #222;
         font-size: 24px;
-        font-weight: 700;
     }
 
     .offer {
@@ -257,4 +254,55 @@ a {
     .button-browse {
         margin-top: 32px;
     }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .center {
+        padding-left: calc(50% - 188px);
+        padding-right: calc(50% - 188px);
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .promo {
+        height: 363px;
+    }
+
+    .promo__text {
+        margin: auto;
+    }
+
+    .promo__text__header {
+        font-size: 38px;
+    }
+
+    .promo__text__heading {
+        font-size: 20px;
+    }
+
+    .offer {
+        grid-template-columns: repeat(3, 232px);
+        grid-template-rows: 168px 116px;
+        gap: 19px;
+    }
+
+    .catalog {
+        padding-top: 45px;
+        padding-bottom: 70px;
+    }
+
+    .catalog__box {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+        margin-top: 72px;
+    }
+
+    .button-browse {
+        margin-top: 32px;
+    }
+
+    */
 }
