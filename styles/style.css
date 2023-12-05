@@ -545,6 +545,10 @@ a {
         padding-right: calc(50% - 171px);
     }
 
+    .header__right {
+        width: 32px;
+    }
+
     .display-none {
         display: none;
     }
