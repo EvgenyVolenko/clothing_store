@@ -35,11 +35,23 @@ a {
     padding-top: 11px;
 }
 
+.header__left__magnifier:hover path {
+    fill: #F16D7F;
+    transition: 0.3s;
+}
+
 .header__right {
     padding-top: 8px;
     display: flex;
     gap: 33px;
     align-items: center;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.header__right__item:hover path {
+    fill: #F16D7F;
+    transition: 0.3s;
 }
 
 .promo {
@@ -149,18 +161,40 @@ a {
 .catalog__item {
     display: flex;
     flex-direction: column;
+    transition: 0.4s;
 }
 
 .catalog__item_selected {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.catalog__item:hover {
     background: rgba(58, 56, 56, 0.86);
 }
 
 .catalog__item img {
-    height: 415px;
+    width: 360px;
+    height: 100%;
     z-index: -1;
+}
+
+.catalog__cart__button {
+    position: absolute;
+    opacity: 1;
+    color: #FFF;
+    border: 1px solid #FFF;
+    background: none;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    padding: 8px 16px;
+    display: none;
+}
+
+.catalog__item:hover .catalog__cart__button {
+    display: block;
 }
 
 .catalog__cart {
@@ -187,18 +221,6 @@ a {
     margin-top: 16px;
 }
 
-.catalog__cart__button {
-    position: absolute;
-    opacity: 1;
-    color: #FFF;
-    border: 1px solid #FFF;
-    background: none;
-    display: flex;
-    gap: 11px;
-    align-items: center;
-    padding: 8px 16px;
-}
-
 .button-browse {
     display: block;
     margin: 48px auto 0px auto;
@@ -207,6 +229,13 @@ a {
     font-size: 16px;
     font-weight: 400;
     background-color: #FFF;
+    cursor: pointer;
+}
+
+.button-browse:hover {
+    transition: .4s;
+    background-color: #F16D7F;
+    color: #FFF;
 }
 
 .advantages {
@@ -314,6 +343,9 @@ a {
     padding-left: 22px;
     width: 224px;
     background-color: #E1E1E1;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .subsribe__right__form__button {
@@ -323,9 +355,62 @@ a {
     width: 100px;
     color: #FFF;
     background-color: #F16D7F;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.4s;
 }
 
+.subsribe__right__form__button:hover {
+    background-color: #E1E1E1;
+    color: #222;
+    box-sizing: border-box;
+    border: 1px solid #F16D7F;
+}
 
+.subsribe__right__form__button:active {
+    background-color: #F16D7F;
+    color: #222;
+}
+
+.footer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: #222;
+    color: #FBFBFB;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__icons {
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+}
+
+.footer__icons__item {
+    width: 32px;
+    height: 32px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.footer__icons__item:hover {
+    background-color: #F16D7F;
+}
+
+.footer__icons__item:hover path {
+    fill: #FFF;
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
