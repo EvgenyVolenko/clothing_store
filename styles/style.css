@@ -194,7 +194,7 @@ a {
 }
 
 .catalog__item:hover .catalog__cart__button {
-    display: block;
+    display: flex;
 }
 
 .catalog__cart {
