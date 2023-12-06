@@ -320,12 +320,13 @@ a {
 .subscribe__right__heading {
     font-size: 24px;
     font-weight: 700;
+    line-height: 167.2%
 }
 
 .subscribe__right__text {
-    margin-top: 8px;
     font-size: 18px;
     font-weight: 400;
+    line-height: 167.2%
 }
 
 .subsribe__right__form {
@@ -506,11 +507,6 @@ a {
         bottom: -78px;
     }
 
-    .subscribe img {
-        position: relative;
-        width: 96px;
-    }
-
     .subscribe__left {
         padding-top: 64px;
         padding-bottom: 0;
@@ -519,6 +515,14 @@ a {
     .subscribe__right {
         padding-top: 0;
         padding-bottom: 140px;
+    }
+
+    .subscribe__right__heading {
+        line-height: 162%;
+    }
+
+    .subscribe__right__text {
+        line-height: 162%
     }
 
     .subsribe__right__form {
@@ -543,10 +547,6 @@ a {
     .center {
         padding-left: calc(50% - 171px);
         padding-right: calc(50% - 171px);
-    }
-
-    .header__right {
-        width: 32px;
     }
 
     .display-none {
@@ -636,11 +636,6 @@ a {
     .subscribe::before {
         left: -418px;
         bottom: -78px;
-    }
-
-    .subscribe img {
-        position: relative;
-        width: 96px;
     }
 
     .subscribe__left {
@@ -753,5 +748,71 @@ a {
     .button-browse {
         margin-top: 40px;
         margin-bottom: 25px;
+    }
+
+    .advantages {
+        flex-direction: column;
+        padding-top: 48px;
+        padding-bottom: 81px;
+        gap: 48px;
+    }
+
+    .advantages__item {
+        grid-template-rows: 60px 40px 54px;
+    }
+
+    .advantages__item__text {
+        width: 100%;
+    }
+
+    .subscribe {
+        height: 614px;
+        gap: 63px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe::before {
+        left: -418px;
+        bottom: -78px;
+    }
+
+    .subscribe__left {
+        padding-top: 64px;
+        padding-bottom: 0;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .subscribe__right {
+        padding-top: 0;
+        padding-bottom: 120px;
+    }
+
+    .subscribe__right__heading {
+        line-height: 153.2%
+    }
+
+    .subscribe__right__text {
+        font-size: 14px;
+        margin-top: 0;
+        line-height: 153.2%
+    }
+
+    .subsribe__right__form {
+        margin-top: 22px;
+        width: 100%;
+    }
+
+    .subsribe__right__form__input {
+        width: 170px;
+    }
+
+    .footer {
+        position: relative;
+        flex-direction: column-reverse;
+        padding-top: 43px;
+        padding-bottom: 9px;
+        gap: 40px;
     }
 }
