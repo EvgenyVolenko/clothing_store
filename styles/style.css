@@ -195,6 +195,7 @@ a {
 
 .catalog__item:hover .catalog__cart__button {
     display: flex;
+    cursor: pointer;
 }
 
 .catalog__cart {
