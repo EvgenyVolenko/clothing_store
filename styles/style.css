@@ -191,11 +191,17 @@ a {
     align-items: center;
     padding: 8px 16px;
     display: none;
+    transition: 0.3s;
 }
 
 .catalog__item:hover .catalog__cart__button {
     display: flex;
     cursor: pointer;
+}
+
+.catalog__cart__button:hover path {
+    transform: scale(1.1);
+    fill: #F16D7F;
 }
 
 .catalog__cart {
