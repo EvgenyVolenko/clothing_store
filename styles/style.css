@@ -33,11 +33,15 @@ a {
 
 .header__left__magnifier {
     padding-top: 11px;
+    transition: 0.3s;
+}
+
+.header__left__magnifier:hover {
+    transform: scale(1.2);
 }
 
 .header__left__magnifier:hover path {
     fill: #F16D7F;
-    transition: 0.3s;
 }
 
 .header__right {
@@ -49,9 +53,16 @@ a {
     list-style-type: none;
 }
 
+.header__right__item {
+    transition: 0.3s;
+}
+
+.header__right__item:hover {
+    transform: scale(1.2);
+}
+
 .header__right__item:hover path {
     fill: #F16D7F;
-    transition: 0.3s;
 }
 
 .promo {
