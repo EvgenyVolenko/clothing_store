@@ -199,9 +199,13 @@ a {
     cursor: pointer;
 }
 
-.catalog__cart__button:hover path {
-    transform: scale(1.1);
-    fill: #F16D7F;
+.catalog__cart__button:hover {
+    transform: scale(1.05);
+    border-color: #F16D7F;
+}
+
+.catalog__cart__button:active {
+    background-color: #F16D7F;
 }
 
 .catalog__cart {
@@ -243,7 +247,12 @@ a {
 .button-browse:hover {
     background-color: #F16D7F;
     color: #FFF;
-    transform: scale(1.2);
+    transform: scale(1.03);
+}
+
+.button-browse:active {
+    background-color: #E1E1E1;
+    color: #222;
 }
 
 .advantages {
