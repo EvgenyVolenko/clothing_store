@@ -231,12 +231,13 @@ a {
     font-weight: 400;
     background-color: #FFF;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .button-browse:hover {
-    transition: .4s;
     background-color: #F16D7F;
     color: #FFF;
+    transform: scale(1.2);
 }
 
 .advantages {
@@ -368,6 +369,7 @@ a {
     color: #222;
     box-sizing: border-box;
     border: 1px solid #F16D7F;
+    transform: scale(1.1);
 }
 
 .subsribe__right__form__button:active {
