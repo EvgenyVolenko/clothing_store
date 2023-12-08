@@ -307,6 +307,7 @@ a {
 .subscribe::before {
     content: "";
     background-image: url(../img/subscribe_background.png);
+    background-position: center;
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -532,8 +533,8 @@ a {
     }
 
     .subscribe::before {
-        left: -418px;
         bottom: -78px;
+        background-position-x: 25%;
     }
 
     .subscribe__left {
@@ -663,8 +664,7 @@ a {
     }
 
     .subscribe::before {
-        left: -418px;
-        bottom: -78px;
+        background-position-x: 23.5%;
     }
 
     .subscribe__left {
@@ -802,8 +802,7 @@ a {
     }
 
     .subscribe::before {
-        left: -418px;
-        bottom: -78px;
+        background-position-x: 23.5%;
     }
 
     .subscribe__left {
