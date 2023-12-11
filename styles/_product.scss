@@ -1,6 +1,29 @@
 .main-product {
     background-color: #F7F7F7;
 
+    &__img {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 11px;
+        padding-bottom: 42px;
+    }
+
+    &__button {
+        width: 47px;
+        height: 47px;
+        border: none;
+        background-color: rgba(42, 42, 42, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__button:hover path {
+        fill: $mainColor;
+    }
+
     &__center {
         display: flex;
         justify-content: center;
@@ -9,11 +32,12 @@
 
     &__info {
         margin-top: -65px;
-        padding: 65px 293px;
+        padding: 65px 246px;
         background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 2;
 
         &__header {
             color: $mainColor;
@@ -107,13 +131,6 @@
     }
 }
 
-.carousel-item img {
-    padding-top: 11px;
-    padding-bottom: 42px;
-    width: 597px;
-    height: 100%;
-}
-
 .sort {
 
     &__summary {
@@ -139,6 +156,6 @@
 }
 
 .catalog_product {
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: 17px;
+    padding-bottom: 145px;
 }
