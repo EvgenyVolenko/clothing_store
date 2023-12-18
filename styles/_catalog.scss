@@ -13,21 +13,31 @@
 
 .filter-sort {
     height: 132px;
+    padding-top: 39px;
+    box-sizing: border-box;
     position: relative;
     display: flex;
     gap: 30px;
 }
 
 .filter {
-    padding: 13px 16px 16px 0px;
+    padding-top: 13px;
     width: 360px;
-    position: absolute;
-    top: 39px;
     box-sizing: border-box;
+    position: relative;
+    z-index: 10;
     transition: 0.4s;
 
-    &[open] {
+    &__content {
+        background-color: $mainLight;
+        padding-top: 0;
+        padding-right: 16px;
         padding-left: 16px;
+        padding-bottom: 16px;
+    }
+
+    &[open] {
+        // padding-left: 16px;
         background: #FFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
@@ -44,6 +54,7 @@
         display: flex;
         align-items: center;
         gap: 11px;
+        padding-left: 16px;
     }
 
     &__heading {
@@ -94,6 +105,7 @@
 
 .sort-cat {
     display: flex;
+    padding-top: 12px;
     gap: 28px;
 
     &__details {
