@@ -34,10 +34,11 @@
         padding-right: 16px;
         padding-left: 16px;
         padding-bottom: 16px;
+        margin-left: -16px;
     }
 
     &[open] {
-        // padding-left: 16px;
+        padding-left: 16px;
         background: #FFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
@@ -54,7 +55,6 @@
         display: flex;
         align-items: center;
         gap: 11px;
-        padding-left: 16px;
     }
 
     &__heading {
