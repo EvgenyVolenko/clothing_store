@@ -1,6 +1,6 @@
 .catalog {
     &_catalog {
-        padding-top: 65px;
+        padding-top: 0px;
         padding-bottom: 0px;
     }
 
@@ -12,34 +12,24 @@
 }
 
 .filter-sort {
-    padding-top: 39px;
-    height: 80px;
+    height: 132px;
     position: relative;
     display: flex;
     gap: 30px;
-    box-sizing: border-box;
 }
 
 .filter {
-    padding-top: 13px;
+    padding: 13px 16px 16px 0px;
     width: 360px;
+    position: absolute;
+    top: 39px;
     box-sizing: border-box;
-    position: relative;
-    z-index: 10;
-
-    &__content {
-        padding: 0px 16px 16px;
-        background-color: #fff;
-        position: absolute;
-    }
+    transition: 0.4s;
 
     &[open] {
-        width: 360px;
-        height: 531px;
-        flex-shrink: 0;
-        fill: #FFF;
-        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         padding-left: 16px;
+        background: #FFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
 
     &[open] .filter__heading {
@@ -58,25 +48,25 @@
 
     &__heading {
         color: $fullBlackText;
+        font-family: Lato;
         font-size: 14px;
-        font-style: normal;
         font-weight: 600;
-        line-height: normal;
-    }
-
-    &__head {
-        color: $fullBlackText;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding: 8px 11px 11px 11px;
-        border-bottom: 1px solid #EBEBEB;
-        border-left: 5px solid $mainColor;
+        line-height: 17px;
     }
 
     &__item {
         margin-top: 16px;
+        transition: 0.4s;
+    }
+
+    &__head {
+        color: $buttonFeatureColor;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid $paginationShrinkColor;
+        border-left: 5px solid $mainColor;
     }
 
     &__item[open] .filter__head {
@@ -93,9 +83,8 @@
     &__link {
         color: $buttonFeatureColor;
         font-size: 14px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
+        line-height: 17px;
 
         &:hover {
             color: $mainColor;
@@ -104,7 +93,6 @@
 }
 
 .sort-cat {
-    padding-top: 12px;
     display: flex;
     gap: 28px;
 
