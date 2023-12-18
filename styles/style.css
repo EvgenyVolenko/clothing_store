@@ -378,7 +378,6 @@ li::-webkit-details-marker {
 
 .base {
   font-family: "Lato";
-  content-visibility: auto;
 }
 
 .center {
