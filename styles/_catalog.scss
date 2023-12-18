@@ -168,9 +168,13 @@
         float: left;
         padding: 12px 10px;
         cursor: pointer;
+    }
 
-        &__active {
-            color: $mainColor;
-        }
+    &__link:hover {
+        color: $mainColor;
+    }
+
+    &__link:hover path {
+        fill: $mainColor;
     }
 }

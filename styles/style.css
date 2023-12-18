@@ -322,8 +322,11 @@
   padding: 12px 10px;
   cursor: pointer;
 }
-.pagination__link__active {
+.pagination__link:hover {
   color: #F16D7F;
+}
+.pagination__link:hover path {
+  fill: #F16D7F;
 }
 
 * {
