@@ -1,3 +1,16 @@
+.catalog {
+    &_catalog {
+        padding-top: 65px;
+        padding-bottom: 0px;
+    }
+
+    &__box {
+        &_catalog {
+            padding-top: 0px !important;
+        }
+    }
+}
+
 .filter-sort {
     padding-top: 39px;
     height: 80px;
@@ -140,12 +153,10 @@
 
 .pagination-box {
     font-size: 16px;
-    font-style: normal;
     font-weight: 300;
-    line-height: normal;
-    height: 93px;
-    margin-top: 48px;
     text-align: center;
+    padding-top: 48px;
+    padding-bottom: 96px;
 }
 
 .pagination {
