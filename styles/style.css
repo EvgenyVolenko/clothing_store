@@ -329,6 +329,112 @@
   fill: #F16D7F;
 }
 
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  gap: 128px;
+}
+.registration__form {
+  width: 360px;
+}
+.registration__form__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 360px;
+}
+.registration__form__heading {
+  color: #222;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+}
+.registration__form__input {
+  height: 45px;
+  box-sizing: border-box;
+  border: 0.5px solid #A4A4A4;
+  padding-left: 16px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+}
+.registration__form__input:focus {
+  border: 2px solid #5D5D5D;
+}
+.registration__form__radio-buttons {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  gap: 20px;
+}
+.registration__form__buttons-block {
+  display: flex;
+  gap: 10px;
+}
+.registration__form__buttons-block label {
+  color: #000;
+  font-size: 11px;
+  font-weight: 300;
+}
+.registration__form__buttons-block:hover input {
+  cursor: pointer;
+}
+.registration__form__text {
+  padding-top: 16px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+}
+.registration__form__button {
+  width: 168px;
+  height: 50px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #F16D7F;
+  color: #FFF;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.registration__form__button:hover {
+  transform: translateY(-5px);
+}
+.registration__form__button:active {
+  box-sizing: border-box;
+  color: #F16D7F;
+  background-color: #E1E1E1;
+  border: 1px solid #F16D7F;
+}
+.registration__form__button:active path {
+  fill: #F16D7F;
+}
+.registration__form__button_position {
+  margin-top: 40px;
+}
+.registration__advantages {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.registration__advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration__advantages__list-item {
+  background-image: url(../img/vector.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 42px;
+}
+
 * {
   padding: 0;
   margin: 0;
