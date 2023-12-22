@@ -1,0 +1,258 @@
+@import 'mixins';
+
+.cart-box {
+
+    padding-top: 96px;
+    padding-bottom: 128px;
+    display: flex;
+
+
+    &__product-box {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__item {
+            width: 652px;
+            height: 306px;
+            box-shadow: 11px 11px 35px 0px rgba(0, 0, 0, 0.21);
+            display: flex;
+        }
+
+        &__pic {
+            width: 262px;
+        }
+
+        &__description {
+            padding: 22px 97px 62px 31px;
+            position: relative;
+        }
+
+        &__name {
+            color: $mainDark;
+            font-size: 24px;
+            font-weight: 400;
+            padding-right: 70px;
+        }
+
+        &__close {
+            position: absolute;
+            right: 22px;
+            top: 28px;
+            cursor: pointer;
+
+            &:hover path {
+                fill: $mainColor;
+            }
+        }
+
+
+        &__data {
+            padding-top: 42px;
+            color: $breadcrumbsLink;
+            font-size: 22px;
+            font-weight: 400;
+            gap: 6px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__price {
+            color: $mainColor;
+        }
+
+        &__quantity-flex {
+            display: flex;
+            gap: 24px;
+        }
+
+        &__quantity {
+            display: flex;
+            justify-content: center;
+            width: 44px;
+            height: 24px;
+            border: 1px solid $paginationShrinkColor;
+            color: $breadcrumbsLink;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        &__button-box {
+            display: flex;
+            justify-content: space-between;
+            width: 652px;
+        }
+
+        &__button {
+            height: 50px;
+            padding: 16px 40px;
+            cursor: pointer;
+            color: $catalogCartName;
+            font-size: 14px;
+            font-weight: 300;
+            border: 1px solid #A4A4A4;
+            box-sizing: border-box;
+            transition: 0.4s;
+
+            &:hover {
+                @include button_hover;
+            }
+
+            &:active {
+                @include button_active;
+            }
+        }
+    }
+
+    &__order-details {
+        display: flex;
+        flex-direction: column;
+        padding-left: 128px;
+
+        &__ship-adress {
+            margin-top: 17px;
+            width: 360px;
+            height: 272px;
+            box-sizing: border-box;
+
+            &__heading {
+                color: $mainDark;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            &__input {
+                width: 360px;
+                height: 45px;
+                box-sizing: border-box;
+                border: 1px solid #A4A4A4;
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-top: 20px;
+                padding-bottom: 24px;
+                color: $mainDark;
+                font-size: 13px;
+                font-weight: 300;
+
+                & input {
+                    padding-left: 18px;
+                }
+            }
+
+            &__button {
+                max-height: 35px;
+                max-width: 100px;
+                padding: 10px 12px;
+                cursor: pointer;
+                color: #4A4A4A;
+                font-size: 11px;
+                font-weight: 300;
+                border: 1px solid #A4A4A4;
+                box-sizing: border-box;
+                transition: 0.4s;
+
+                &:hover {
+                    @include button_hover;
+                }
+
+                &:active {
+                    @include button_active;
+                }
+            }
+        }
+
+        &__input::placeholder {
+            color: #b1b1b1;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        &__input-dark::placeholder {
+            color: $mainDark;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        &__checkout {
+            margin-top: 57px;
+            width: 360px;
+            height: 214px;
+            display: flex;
+            flex-direction: column;
+            background-color: #F5F3F3;
+            position: relative;
+
+            &__sub-total {
+                width: 108px;
+                height: 12px;
+                color: #4A4A4A;
+                font-size: 11px;
+                font-weight: 400;
+                position: absolute;
+                top: 39px;
+                right: 38px;
+                justify-content: space-between;
+            }
+
+            &__grand-total {
+                width: 170px;
+                height: 19px;
+                color: $mainDark;
+                font-size: 16px;
+                font-weight: 300;
+                position: absolute;
+                top: 64px;
+                right: 38px;
+            }
+
+            &__line {
+                position: absolute;
+                width: 274px;
+                border-top: 1px solid #e2e2e2;
+                top: 104px;
+                left: 44px;
+            }
+
+            &__btn {
+                height: 50px;
+                width: 274px;
+                padding: 16px 41px;
+                cursor: pointer;
+                color: $mainLight;
+                background-color: $mainColor;
+                font-size: 16px;
+                font-weight: 300;
+                position: absolute;
+                bottom: 42px;
+                left: 44px;
+                box-sizing: border-box;
+                transition: 0.4s;
+
+                &:hover {
+                    color: $mainColor;
+                    background-color: $mainLight;
+                    box-shadow: 3px 1px 6px rgba(241, 109, 127, 0.25);
+                }
+
+                &:active {
+                    @include button_active;
+                    box-shadow: none;
+                }
+            }
+
+            &__color {
+                color: $mainColor;
+            }
+        }
+    }
+}

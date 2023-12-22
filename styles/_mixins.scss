@@ -1,0 +1,9 @@
+@mixin button_hover {
+    color: $mainLight;
+    background-color: $mainColor;
+    border: none;
+}
+
+@mixin button_active {
+    color: $mainDark;
+}
