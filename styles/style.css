@@ -371,6 +371,38 @@
 .registration__form__buttons-block {
   display: flex;
   gap: 10px;
+  justify-content: center;
+}
+.registration__form__buttons-block input {
+  display: none;
+}
+.registration__form__buttons-block label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 27px;
+}
+.registration__form__buttons-block label::before {
+  content: "";
+  height: 17px;
+  width: 17px;
+  border: 1px solid #A4A4A4;
+  border-radius: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  cursor: pointer;
+}
+.registration__form__buttons-block input:checked + label::after {
+  content: "";
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  position: absolute;
+  box-sizing: border-box;
+  left: 2px;
+  background-color: #F16D7F;
+  cursor: pointer;
 }
 .registration__form__buttons-block label {
   color: #000;
