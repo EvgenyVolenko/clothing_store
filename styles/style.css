@@ -190,11 +190,13 @@
     box-sizing: border-box;
     border: 1px solid #EAEAEA;
   }
+  .catalog__item_position {
+    order: -1;
+  }
+  .catalog__item .display-none {
+    display: none;
+  }
 }
-.catalog__box_catalog {
-  padding-top: 0px !important;
-}
-
 .filter-sort {
   height: 132px;
   padding-top: 39px;
