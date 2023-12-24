@@ -1,8 +1,4 @@
 .catalog {
-    &_catalog {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
 
     &__box {
         &_catalog {
@@ -176,5 +172,40 @@
 
     &__link:hover path {
         fill: $mainColor;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+    .catalog__box .display-none {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .catalog__box .display-none {
+        display: none;
+    }
+
+    .catalog {
+
+        &__box {
+            &_catalog {
+                margin-top: 0px !important;
+            }
+        }
+    }
+
+    .filter-sort {
+        display: flex;
+        justify-content: space-between;
+        height: 82px;
+        padding-top: 12px;
+        gap: 30px;
+    }
+
+    .pagination-box {
+        padding-top: 40px;
+        padding-bottom: 64px;
     }
 }

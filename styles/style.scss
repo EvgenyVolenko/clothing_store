@@ -149,7 +149,7 @@ li::-webkit-details-marker {
 
 .offer {
     padding-top: 65px;
-    padding-bottom: 65px;
+    padding-bottom: 96px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 360px);
     grid-template-rows: 260px 180px;
@@ -193,9 +193,6 @@ li::-webkit-details-marker {
 }
 
 .catalog {
-    padding-top: 31px;
-    padding-bottom: 60px;
-
     &__header {
         color: $mainDark;
         font-size: 30px;
@@ -209,19 +206,17 @@ li::-webkit-details-marker {
         font-weight: 400;
         text-align: center;
         margin-top: 6px;
+        margin-bottom: 48px;
     }
 
     &__box {
         display: grid;
         gap: 30px;
         grid-template-columns: repeat(auto-fit, 360px);
-        grid-template-rows: 581px;
-        padding-top: 48px;
+        // grid-template-rows: 581px;
     }
 
     &__item {
-        display: flex;
-        flex-direction: column;
         transition: 0.4s;
 
         &_selected {
@@ -297,7 +292,7 @@ li::-webkit-details-marker {
 
 .button-browse {
     display: block;
-    margin: 48px auto 0px auto;
+    margin: 48px auto 96px auto;
     padding: 15px 39px;
     border: 1px solid $mainColor;
     font-size: 16px;
@@ -323,7 +318,6 @@ li::-webkit-details-marker {
     padding-top: 104px;
     padding-bottom: 104px;
     background-color: $mainDark;
-    margin-top: 35px;
     display: flex;
     gap: 30px;
     font-family: Lato;
@@ -505,6 +499,8 @@ li::-webkit-details-marker {
         grid-template-columns: repeat(3, 296px);
         grid-template-rows: 214px 149px;
         justify-content: center;
+        padding-top: 154px;
+        padding-bottom: 64px;
     }
 
     .catalog__box {
@@ -553,21 +549,24 @@ li::-webkit-details-marker {
         grid-template-columns: repeat(3, 232px);
         grid-template-rows: 168px 116px;
         gap: 19px;
+        padding-top: 20px;
+        padding-bottom: 154px;
     }
 
     .catalog {
-        padding-top: 45px;
-        padding-bottom: 30px;
+        &__heading {
+            margin-bottom: 72px;
+        }
 
         &__box {
             grid-template-columns: repeat(2, 360px);
             gap: 16px;
-            margin-top: 72px;
         }
     }
 
     .button-browse {
         margin-top: 32px;
+        margin-bottom: 64px;
     }
 
     .advantages {
@@ -662,6 +661,8 @@ li::-webkit-details-marker {
         flex-direction: column;
         gap: 32px;
         align-items: center;
+        padding-top: 64px;
+        padding-bottom: 64px;
 
         &_wide {
             height: 111px;
@@ -679,10 +680,9 @@ li::-webkit-details-marker {
     }
 
     .catalog {
-        padding-top: 0px;
-
         &__heading {
             margin-top: 3px;
+            margin-bottom: 64px;
         }
 
         &__box {
@@ -690,7 +690,6 @@ li::-webkit-details-marker {
             flex-direction: column;
             align-items: center;
             gap: 16px;
-            margin-top: 64px;
         }
 
         &__item {
@@ -700,13 +699,13 @@ li::-webkit-details-marker {
 
     .button-browse {
         margin-top: 40px;
-        margin-bottom: 25px;
     }
 
     .advantages {
         flex-direction: column;
         padding-top: 48px;
         padding-bottom: 81px;
+        margin-top: 0;
         gap: 48px;
 
         &__item {
@@ -793,6 +792,8 @@ li::-webkit-details-marker {
         flex-direction: column;
         gap: 32px;
         align-items: center;
+        padding-top: 64px;
+        padding-bottom: 64px;
 
         &_wide img {
             height: 111px;
@@ -805,14 +806,13 @@ li::-webkit-details-marker {
     }
 
     .catalog {
-        padding-top: 0px;
-
         &__header {
             font-size: 28px;
         }
 
         &__heading {
             margin-top: 3px;
+            margin-bottom: 64px;
             font-size: 12px;
         }
 
@@ -821,7 +821,6 @@ li::-webkit-details-marker {
             flex-direction: column;
             align-items: center;
             gap: 16px;
-            margin-top: 64px;
         }
 
         &__item img {
@@ -836,11 +835,11 @@ li::-webkit-details-marker {
 
     .button-browse {
         margin-top: 40px;
-        margin-bottom: 25px;
     }
 
     .advantages {
         flex-direction: column;
+        margin-top: 0;
         padding-top: 48px;
         padding-bottom: 81px;
         gap: 48px;

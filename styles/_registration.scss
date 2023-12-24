@@ -159,3 +159,22 @@
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .registration {
+        padding-top: 40px;
+        gap: 22px;
+        line-height: 19px;
+
+        &__advantages {
+            font-size: 16px;
+            gap: 32px;
+            line-height: normal;
+
+            &__list {
+                gap: 20px;
+            }
+        }
+    }
+}

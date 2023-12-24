@@ -256,3 +256,40 @@
         }
     }
 }
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+    .cart-box {
+        &__order-details {
+            padding-left: 32px;
+            transform: scale(0.8);
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cart-box {
+        padding-top: 60px;
+        flex-direction: column;
+
+        &__product-box {
+            gap: 62px;
+
+            &__item {
+                width: 734px;
+            }
+
+            &__button-box {
+                gap: 48px;
+                justify-content: center;
+                width: 100%;
+            }
+        }
+
+        &__order-details {
+            flex-direction: row;
+            padding-left: 0;
+            padding-top: 64px;
+            gap: 16px;
+        }
+    }
+}
