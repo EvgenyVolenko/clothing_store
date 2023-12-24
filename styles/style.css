@@ -707,7 +707,8 @@
   font-weight: 400;
   position: absolute;
   top: 39px;
-  right: 38px;
+  right: 34px;
+  display: flex;
   justify-content: space-between;
 }
 .cart-box__order-details__checkout__grand-total {
@@ -718,14 +719,16 @@
   font-weight: 300;
   position: absolute;
   top: 64px;
-  right: 38px;
+  right: 34px;
+  display: flex;
+  justify-content: space-between;
 }
 .cart-box__order-details__checkout__line {
   position: absolute;
   width: 274px;
   border-top: 1px solid #e2e2e2;
   top: 104px;
-  left: 44px;
+  right: 34px;
 }
 .cart-box__order-details__checkout__btn {
   height: 50px;
@@ -738,7 +741,7 @@
   font-weight: 300;
   position: absolute;
   bottom: 42px;
-  left: 44px;
+  right: 34px;
   box-sizing: border-box;
   transition: 0.4s;
 }
@@ -751,8 +754,9 @@
   color: #222;
   box-shadow: none;
 }
-.cart-box__order-details__checkout__color {
+.cart-box__order-details__checkout__bold {
   color: #F16D7F;
+  font-weight: 700;
 }
 
 @media (min-width: 1025px) and (max-width: 1240px) {

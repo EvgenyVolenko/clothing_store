@@ -200,7 +200,8 @@
                 font-weight: 400;
                 position: absolute;
                 top: 39px;
-                right: 38px;
+                right: 34px;
+                display: flex;
                 justify-content: space-between;
             }
 
@@ -212,7 +213,9 @@
                 font-weight: 300;
                 position: absolute;
                 top: 64px;
-                right: 38px;
+                right: 34px;
+                display: flex;
+                justify-content: space-between;
             }
 
             &__line {
@@ -220,7 +223,7 @@
                 width: 274px;
                 border-top: 1px solid #e2e2e2;
                 top: 104px;
-                left: 44px;
+                right: 34px;
             }
 
             &__btn {
@@ -234,7 +237,7 @@
                 font-weight: 300;
                 position: absolute;
                 bottom: 42px;
-                left: 44px;
+                right: 34px;
                 box-sizing: border-box;
                 transition: 0.4s;
 
@@ -250,8 +253,9 @@
                 }
             }
 
-            &__color {
+            &__bold {
                 color: $mainColor;
+                font-weight: 700;
             }
         }
     }
