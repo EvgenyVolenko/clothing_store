@@ -52,7 +52,6 @@
             }
         }
 
-
         &__data {
             padding-top: 42px;
             color: $breadcrumbsLink;
@@ -295,5 +294,111 @@
             padding-top: 64px;
             gap: 16px;
         }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .cart-box {
+        padding-top: 40px;
+        padding-bottom: 96px;
+        flex-direction: column;
+        gap: 48px;
+
+        &__product-box {
+            gap: 30px;
+
+            &__list {
+                gap: 32px;
+            }
+
+            &__item {
+                width: 360px;
+                height: 188px;
+                box-shadow: 8px 8px 21px 0px rgba(0, 0, 0, 0.13);
+            }
+
+            &__pic {
+                width: 144px;
+            }
+
+            &__description {
+                padding: 14px 54px 38px 18px;
+            }
+
+            &__name {
+                font-size: 16px;
+                padding-right: 10px;
+            }
+
+            &__close {
+                right: 12px;
+                top: 13px;
+
+                svg {
+                    width: 10px;
+                    height: 11px;
+                }
+            }
+
+            &__data {
+                padding-top: 26px;
+                font-size: 14px;
+                gap: 4px;
+            }
+
+            &__quantity-flex {
+                gap: 24px;
+            }
+
+            &__quantity {
+                width: 24px;
+                height: 15px;
+                border: 1px solid $paginationShrinkColor;
+                color: $breadcrumbsLink;
+                font-size: 10px;
+            }
+
+            &__button-box {
+                width: 360px;
+                display: flex;
+            }
+
+            &__button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 33px;
+                width: 175px;
+                font-size: 12px;
+                font-weight: 400;
+                padding: 0;
+                text-transform: lowercase;
+            }
+        }
+
+        &__order-details {
+            padding-left: 0px;
+
+            &__ship-adress {
+                margin-top: 0;
+
+                &__button {
+                    font-weight: 400;
+                    text-transform: lowercase;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            &__checkout {
+                margin-top: 48px;
+
+            }
+        }
+    }
+
+    .uppercase {
+        text-transform: uppercase;
     }
 }

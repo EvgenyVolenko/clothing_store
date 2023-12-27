@@ -632,12 +632,17 @@ li::-webkit-details-marker {
 @media (min-width: 375px) and (max-width: 767px) {
 
     .center {
-        padding-left: calc(50% - 171px);
-        padding-right: calc(50% - 171px);
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
     }
 
     .display-none {
         display: none;
+    }
+
+    .header {
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
     }
 
     .promo {
@@ -665,7 +670,7 @@ li::-webkit-details-marker {
         padding-bottom: 64px;
 
         &_wide {
-            height: 111px;
+            height: 111px !important;
         }
 
         &_wide img {
