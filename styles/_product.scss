@@ -63,6 +63,7 @@
             font-weight: 300;
             color: #5E5E5E;
             padding: 48px 0 32px;
+            width: 553px;
         }
 
         &__price {
@@ -74,7 +75,7 @@
         &__features {
             margin: 65px 0 48px;
             display: flex;
-            gap: 42px;
+            gap: 24px;
         }
 
         &__button {
@@ -126,7 +127,7 @@
     }
 
     &__dividing-line {
-        margin-top: 32px;
+        margin-top: 64px;
         width: 641px;
         stroke-width: 1px;
         border: 1px solid #EAEAEA;
@@ -139,7 +140,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 9px;
     }
 
     &__heading {
@@ -191,10 +192,75 @@
             &_position {
                 order: -1;
             }
+
+            &_visibility {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .main-product {
+        &__img {
+            padding-top: 85px;
+            padding-bottom: 85px;
         }
 
-        &__item .display-none {
-            display: none;
+        &__img img {
+            width: 280px;
+            height: 100%;
+        }
+
+        &__info {
+            margin-top: 0px;
+            padding: 65px 0px;
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #EAEAEA;
+
+            &__text {
+                padding-top: 32px;
+                width: 326px;
+                line-height: 143.1%;
+            }
+
+            &__features {
+                margin: 65px 0;
+                display: flex;
+                width: 304px;
+            }
+        }
+
+        &__dividing-line {
+            width: 175px;
+            margin-top: 32px;
+        }
+
+        &__center {
+            &_position {
+                margin-bottom: 64px;
+            }
+        }
+    }
+
+    .sort {
+        &__heading {
+            font-size: 10px;
+        }
+    }
+
+    .catalog {
+        &__box {
+            &_position {
+                padding-bottom: 64px;
+            }
+        }
+
+        &__item {
+            &_visibility1 {
+                display: none;
+            }
         }
     }
 }

@@ -40,8 +40,15 @@
 
 @media (min-width: 375px) and (max-width: 767px) {
     .top-head {
+        flex-direction: column;
+        gap: 32px;
         padding-top: 50px;
         padding-bottom: 70px;
         justify-content: center;
+
+        &_two-string {
+            padding-top: 24px;
+            padding-bottom: 46px;
+        }
     }
 }

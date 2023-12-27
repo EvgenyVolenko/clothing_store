@@ -37,9 +37,15 @@
 
 @media (min-width: 375px) and (max-width: 767px) {
   .top-head {
+    flex-direction: column;
+    gap: 32px;
     padding-top: 50px;
     padding-bottom: 70px;
     justify-content: center;
+  }
+  .top-head_two-string {
+    padding-top: 24px;
+    padding-bottom: 46px;
   }
 }
 .main-product {
@@ -100,6 +106,7 @@
   font-weight: 300;
   color: #5E5E5E;
   padding: 48px 0 32px;
+  width: 553px;
 }
 .main-product__info__price {
   font-size: 24px;
@@ -109,7 +116,7 @@
 .main-product__info__features {
   margin: 65px 0 48px;
   display: flex;
-  gap: 42px;
+  gap: 24px;
 }
 .main-product__info__button {
   width: 212px;
@@ -152,7 +159,7 @@
   margin: 12px 0;
 }
 .main-product__dividing-line {
-  margin-top: 32px;
+  margin-top: 64px;
   width: 641px;
   stroke-width: 1px;
   border: 1px solid #EAEAEA;
@@ -162,7 +169,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
 }
 .sort__heading {
   position: relative;
@@ -200,7 +207,50 @@
   .catalog__item_position {
     order: -1;
   }
-  .catalog__item .display-none {
+  .catalog__item_visibility {
+    display: none;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .main-product__img {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+  .main-product__img img {
+    width: 280px;
+    height: 100%;
+  }
+  .main-product__info {
+    margin-top: 0px;
+    padding: 65px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+  }
+  .main-product__info__text {
+    padding-top: 32px;
+    width: 326px;
+    line-height: 143.1%;
+  }
+  .main-product__info__features {
+    margin: 65px 0;
+    display: flex;
+    width: 304px;
+  }
+  .main-product__dividing-line {
+    width: 175px;
+    margin-top: 32px;
+  }
+  .main-product__center_position {
+    margin-bottom: 64px;
+  }
+  .sort__heading {
+    font-size: 10px;
+  }
+  .catalog__box_position {
+    padding-bottom: 64px;
+  }
+  .catalog__item_visibility1 {
     display: none;
   }
 }
@@ -377,14 +427,6 @@
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
-  .top-head {
-    flex-direction: column;
-    gap: 32px;
-  }
-  .top-head_catalog {
-    padding-top: 24px;
-    padding-bottom: 46px;
-  }
   .filter-sort {
     height: 81px;
     padding-top: 12px;

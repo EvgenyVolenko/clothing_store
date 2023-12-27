@@ -202,16 +202,6 @@
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-    .top-head {
-        flex-direction: column;
-        gap: 32px;
-
-        &_catalog {
-            padding-top: 24px;
-            padding-bottom: 46px;
-        }
-    }
-
     .filter-sort {
         height: 81px;
         padding-top: 12px;
