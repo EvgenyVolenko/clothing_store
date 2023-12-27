@@ -856,6 +856,9 @@
   color: #F16D7F;
   font-weight: 700;
 }
+.cart-box .uppercase {
+  display: inline;
+}
 
 @media (min-width: 1025px) and (max-width: 1240px) {
   .cart-box__order-details {
