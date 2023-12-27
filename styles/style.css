@@ -376,6 +376,49 @@
     padding-bottom: 64px;
   }
 }
+@media (min-width: 375px) and (max-width: 767px) {
+  .top-head {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .top-head_catalog {
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+  .filter-sort {
+    height: 81px;
+    padding-top: 12px;
+  }
+  .filter {
+    padding-top: 13px;
+    width: 90px;
+  }
+  .filter[open] {
+    width: 360px;
+  }
+  .filter svg {
+    width: 27px;
+    height: 16px;
+  }
+  .filter__heading_hide {
+    display: none;
+  }
+  .sort-cat {
+    position: absolute;
+    padding-left: 99px;
+    gap: 24px;
+  }
+  .sort-cat__summary {
+    gap: 9px;
+  }
+  .sort-cat__heading {
+    font-size: 12px;
+  }
+  .pagination-box {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+}
 .registration {
   padding-top: 64px;
   padding-bottom: 96px;
