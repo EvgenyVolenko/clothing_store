@@ -625,6 +625,20 @@
   padding-bottom: 128px;
   display: flex;
 }
+.cart-box_index-page {
+  padding-bottom: 96px;
+  padding-top: 96px;
+}
+.cart-box_hidden {
+  display: none;
+}
+.cart-box__header {
+  color: #222;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 64px;
+}
 .cart-box__product-box {
   display: flex;
   flex-direction: column;

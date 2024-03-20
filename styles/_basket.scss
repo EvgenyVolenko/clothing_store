@@ -6,6 +6,22 @@
     padding-bottom: 128px;
     display: flex;
 
+    &_index-page {
+        padding-bottom: 96px;
+        padding-top: 96px;
+    }
+
+    &_hidden {
+        display: none;
+    }
+
+    &__header {
+        color: #222;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 64px;
+    }
 
     &__product-box {
         display: flex;
