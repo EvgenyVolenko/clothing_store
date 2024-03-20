@@ -27,7 +27,8 @@ const fillingCartItem = element => {
 
     const itemClose = cartBoxItemTemplate.querySelector('div.cart-box__product-box__close');
     itemClose.addEventListener('click', function (e) {
-        productBoxListNode[0].remove();
+        productBoxListNode[0].parentElement.parentElement.remove();
+        testProductBoxListLenght();
     });
 
     divListCart.appendChild(cartBoxItemTemplate);
