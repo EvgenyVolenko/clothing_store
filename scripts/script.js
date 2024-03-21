@@ -16,31 +16,47 @@ const testProductBoxListLenght = () => {
     }
 };
 
+const testProductAvailability = element => {
+    for (let i = 0; i < productBoxListNode.length; i++) {
+        if (Number(productBoxListNode[i].querySelector('div.cart-box__product-box__item > p.cart-box_hidden').textContent) === element.id) {
+            return i;
+        }
+    };
+    return null;
+};
+
 const fillingCartItem = element => {
-    const cartBoxItemTemplate = templateProdCart.cloneNode(true);
-    cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > img.cart-box__product-box__pic').src = element.img_src;
-    cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > img.cart-box__product-box__pic').alt = element.img_alt;
-    cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > div.cart-box__product-box__description > div.cart-box__product-box__name').textContent = element.catalog__cart__name;
-    cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > div.cart-box__product-box__description > ul.cart-box__product-box__data > li > span.cart-box__product-box__price').textContent = element.catalog__cart__price;
-    cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > div.cart-box__product-box__description > ul.cart-box__product-box__data > li.cart-box__product-box__color').textContent = `Color: ${element.color}`;
-    cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > div.cart-box__product-box__description > ul.cart-box__product-box__data > li.cart-box__product-box__size').textContent = `Size: ${element.size}`;
-    cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > p.cart-box_hidden').textContent = element.id;
+    let cartBoxItemCounter = 1;
+    let productAvailabilityItem = testProductAvailability(element);
 
-    const itemClose = cartBoxItemTemplate.querySelector('div.cart-box__product-box__close');
-    itemClose.addEventListener('click', function (e) {
-        for (let i = 0; i < productBoxListNode.length; i++) {
-            if (Number(productBoxListNode[i].querySelector('div.cart-box__product-box__item > p.cart-box_hidden').textContent) === element.id) {
-                productBoxListNode[i].parentElement.parentElement.remove();
+    if (productAvailabilityItem != null) {
+        cartBoxItemCounter = Number(productBoxListNode[productAvailabilityItem].querySelector('div.cart-box__product-box__quantity').textContent);
+        cartBoxItemCounter++;
+        productBoxListNode[productAvailabilityItem].querySelector('div.cart-box__product-box__quantity').textContent = cartBoxItemCounter;
+    } else {
+        const cartBoxItemTemplate = templateProdCart.cloneNode(true);
+        cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > img.cart-box__product-box__pic').src = element.img_src;
+        cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > img.cart-box__product-box__pic').alt = element.img_alt;
+        cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > div.cart-box__product-box__description > div.cart-box__product-box__name').textContent = element.catalog__cart__name;
+        cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > div.cart-box__product-box__description > ul.cart-box__product-box__data > li > span.cart-box__product-box__price').textContent = element.catalog__cart__price;
+        cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > div.cart-box__product-box__description > ul.cart-box__product-box__data > li.cart-box__product-box__color').textContent = `Color: ${element.color}`;
+        cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > div.cart-box__product-box__description > ul.cart-box__product-box__data > li.cart-box__product-box__size').textContent = `Size: ${element.size}`;
+        cartBoxItemTemplate.querySelector('div.cart-box__product-box__item > p.cart-box_hidden').textContent = element.id;
+        cartBoxItemTemplate.querySelector('div.cart-box__product-box__quantity').textContent = cartBoxItemCounter;
+
+        const itemClose = cartBoxItemTemplate.querySelector('div.cart-box__product-box__close');
+        itemClose.addEventListener('click', function (e) {
+            productAvailabilityItem = Number(testProductAvailability(element));
+            if (productAvailabilityItem != null) {
+                productBoxListNode[productAvailabilityItem].parentElement.parentElement.remove();
             }
-            console.log(productBoxListNode[i].querySelector('div.cart-box__product-box__item > p.cart-box_hidden').textContent);
-        };
+            testProductBoxListLenght();
+        });
+
+
+        divListCart.appendChild(cartBoxItemTemplate);
         testProductBoxListLenght();
-    });
-
-
-    divListCart.appendChild(cartBoxItemTemplate);
-
-    testProductBoxListLenght();
+    }
 };
 
 parseData.forEach(element => {
