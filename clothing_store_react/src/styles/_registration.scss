@@ -1,0 +1,187 @@
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    gap: 128px;
+
+    &__form {
+        width: 360px;
+
+
+        &__block {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 360px;
+        }
+
+        &__heading {
+            color: $mainDark;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+        }
+
+        &__input {
+            height: 45px;
+            box-sizing: border-box;
+            border: 0.5px solid #A4A4A4;
+            padding-left: 16px;
+            color: #B1B1B1;
+            font-size: 13px;
+            font-weight: 300;
+
+            &:focus {
+                border: 2px solid $catalogDescription;
+            }
+        }
+
+        &__radio-buttons {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            display: flex;
+            gap: 20px;
+        }
+
+        &__buttons-block {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+
+
+            & input {
+                display: none;
+            }
+
+            & label {
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 27px;
+            }
+
+            & label::before {
+                content: "";
+                height: 17px;
+                width: 17px;
+                border: 1px solid #A4A4A4;
+                border-radius: 50%;
+                position: absolute;
+                box-sizing: border-box;
+                left: 0;
+                cursor: pointer;
+            }
+
+            & input:checked+label::after {
+                content: "";
+                height: 13px;
+                width: 13px;
+                border-radius: 50%;
+                position: absolute;
+                box-sizing: border-box;
+                left: 2px;
+                background-color: $mainColor;
+                cursor: pointer;
+            }
+        }
+
+        &__buttons-block label {
+            color: #000;
+            font-size: 11px;
+            font-weight: 300;
+        }
+
+        &__buttons-block:hover input {
+            cursor: pointer;
+        }
+
+        &__text {
+            padding-top: 16px;
+            color: #B1B1B1;
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16px;
+        }
+
+        &__button {
+            width: 168px;
+            height: 50px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            background-color: $mainColor;
+            color: $mainLight;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            &:active {
+                box-sizing: border-box;
+                color: $mainColor;
+                background-color: $buttonBrowseBackgroundActive;
+                border: 1px solid $mainColor;
+            }
+
+            &:active path {
+                fill: $mainColor;
+            }
+
+            &_position {
+                margin-top: 40px;
+            }
+        }
+    }
+
+    &__advantages {
+        color: #000;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &__list-item {
+            background-image: url(../img/vector.svg);
+            background-repeat: no-repeat;
+            background-position: left;
+            padding-left: 42px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .registration {
+        padding-top: 40px;
+        gap: 22px;
+        line-height: 19px;
+
+        &__advantages {
+            font-size: 16px;
+            gap: 32px;
+            line-height: normal;
+
+            &__list {
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    .registration {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
