@@ -1,3 +1,5 @@
+import SortCatBox from "./SortCatBox";
+
 function FilterSort() {
     return (
         <div className="filter-sort center">
@@ -95,24 +97,7 @@ function FilterSort() {
                                 fill="#6F6E6E" />
                         </svg>
                     </summary>
-                    <div className="sort-cat__box">
-                        <div className="sort-cat__check">
-                            <input id="sort-cart__check1" type="checkbox" />
-                            <label htmlFor="sort-cart__check1">XS</label>
-                        </div>
-                        <div className="sort-cat__check">
-                            <input id="sort-cart__check2" type="checkbox" />
-                            <label htmlFor="sort-cart__check2">S</label>
-                        </div>
-                        <div className="sort-cat__check">
-                            <input id="sort-cart__check3" type="checkbox" />
-                            <label htmlFor="sort-cart__check3">M</label>
-                        </div>
-                        <div className="sort-cat__check">
-                            <input id="sort-cart__check4" type="checkbox" />
-                            <label htmlFor="sort-cart__check4">L</label>
-                        </div>
-                    </div>
+                    <SortCatBox />
                 </details>
                 <details className="sort-cat__details">
                     <summary className="sort-cat__summary"><span
