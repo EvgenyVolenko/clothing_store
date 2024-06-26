@@ -12,7 +12,7 @@ function ProductCardLarge() {
         <article className="catalog__item">
 
             <div className="catalog__item_selected">
-                <img src={require("../../img/" + product.img_src)} alt="product_1" />
+                <img src={require("../../img/" + product.img_src)} alt={product.img_alt} />
 
                 <button className="catalog__cart__button">
                     <ToBasketButtonSVG />
