@@ -1,12 +1,6 @@
-import { useSelector } from "react-redux";
 import ToBasketButtonSVG from './ToBasketButtonSVG';
 
-function ProductCardLarge() {
-
-    const product = useSelector(state => state.products.array[0]);
-
-    const url = product.img_src;
-    console.log(url);
+function ProductCardLarge({ product }) {
 
     return (
         <article className="catalog__item">

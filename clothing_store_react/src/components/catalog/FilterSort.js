@@ -1,10 +1,10 @@
 function FilterSort() {
     return (
-        <div class="filter-sort center">
-            <div class="filter-sort_shadow">
-                <details class="filter">
-                    <summary class="filter__summary"><span
-                        class="filter__heading filter__heading_hide">FILTER</span>
+        <div className="filter-sort center">
+            <div className="filter-sort_shadow">
+                <details className="filter">
+                    <summary className="filter__summary"><span
+                        className="filter__heading filter__heading_hide">FILTER</span>
                         <svg width="15" height="10" viewBox="0 0 15 10"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -12,71 +12,71 @@ function FilterSort() {
                                 fill="black" />
                         </svg>
                     </summary>
-                    <div class="filter__content">
-                        <details open class="filter__item">
-                            <summary class="filter__head">CATEGORY</summary>
-                            <div class="filter__link-box">
-                                <a href="#" class="filter__link">Accessories</a>
-                                <a href="#" class="filter__link">Bags</a>
-                                <a href="#" class="filter__link">Denim</a>
-                                <a href="#" class="filter__link">Hoodies &
+                    <div className="filter__content">
+                        <details open className="filter__item">
+                            <summary className="filter__head">CATEGORY</summary>
+                            <div className="filter__link-box">
+                                <a href="#" className="filter__link">Accessories</a>
+                                <a href="#" className="filter__link">Bags</a>
+                                <a href="#" className="filter__link">Denim</a>
+                                <a href="#" className="filter__link">Hoodies &
                                     Sweatshirts</a>
-                                <a href="#" class="filter__link">Jackets &
+                                <a href="#" className="filter__link">Jackets &
                                     Coats</a>
-                                <a href="#" class="filter__link">Polos</a>
-                                <a href="#" class="filter__link">Shirts</a>
-                                <a href="#" class="filter__link">Shoes</a>
-                                <a href="#" class="filter__link">Sweaters &
+                                <a href="#" className="filter__link">Polos</a>
+                                <a href="#" className="filter__link">Shirts</a>
+                                <a href="#" className="filter__link">Shoes</a>
+                                <a href="#" className="filter__link">Sweaters &
                                     Knits</a>
-                                <a href="#" class="filter__link">T-Shirts</a>
-                                <a href="#" class="filter__link">Tanks</a>
+                                <a href="#" className="filter__link">T-Shirts</a>
+                                <a href="#" className="filter__link">Tanks</a>
                             </div>
                         </details>
-                        <details class="filter__item">
-                            <summary class="filter__head">BRAND</summary>
-                            <div class="filter__link-box">
-                                <a href="#" class="filter__link">Accessories</a>
-                                <a href="#" class="filter__link">Bags</a>
-                                <a href="#" class="filter__link">Denim</a>
-                                <a href="#" class="filter__link">Hoodies &
+                        <details className="filter__item">
+                            <summary className="filter__head">BRAND</summary>
+                            <div className="filter__link-box">
+                                <a href="#" className="filter__link">Accessories</a>
+                                <a href="#" className="filter__link">Bags</a>
+                                <a href="#" className="filter__link">Denim</a>
+                                <a href="#" className="filter__link">Hoodies &
                                     Sweatshirts</a>
-                                <a href="#" class="filter__link">Jackets &
+                                <a href="#" className="filter__link">Jackets &
                                     Coats</a>
-                                <a href="#" class="filter__link">Polos</a>
-                                <a href="#" class="filter__link">Shirts</a>
-                                <a href="#" class="filter__link">Shoes</a>
-                                <a href="#" class="filter__link">Sweaters &
+                                <a href="#" className="filter__link">Polos</a>
+                                <a href="#" className="filter__link">Shirts</a>
+                                <a href="#" className="filter__link">Shoes</a>
+                                <a href="#" className="filter__link">Sweaters &
                                     Knits</a>
-                                <a href="#" class="filter__link">T-Shirts</a>
-                                <a href="#" class="filter__link">Tanks</a>
+                                <a href="#" className="filter__link">T-Shirts</a>
+                                <a href="#" className="filter__link">Tanks</a>
                             </div>
                         </details>
-                        <details class="filter__item">
-                            <summary class="filter__head">DESIGNER</summary>
-                            <div class="filter__link-box">
-                                <a href="#" class="filter__link">Accessories</a>
-                                <a href="#" class="filter__link">Bags</a>
-                                <a href="#" class="filter__link">Denim</a>
-                                <a href="#" class="filter__link">Hoodies &
+                        <details className="filter__item">
+                            <summary className="filter__head">DESIGNER</summary>
+                            <div className="filter__link-box">
+                                <a href="#" className="filter__link">Accessories</a>
+                                <a href="#" className="filter__link">Bags</a>
+                                <a href="#" className="filter__link">Denim</a>
+                                <a href="#" className="filter__link">Hoodies &
                                     Sweatshirts</a>
-                                <a href="#" class="filter__link">Jackets &
+                                <a href="#" className="filter__link">Jackets &
                                     Coats</a>
-                                <a href="#" class="filter__link">Polos</a>
-                                <a href="#" class="filter__link">Shirts</a>
-                                <a href="#" class="filter__link">Shoes</a>
-                                <a href="#" class="filter__link">Sweaters &
+                                <a href="#" className="filter__link">Polos</a>
+                                <a href="#" className="filter__link">Shirts</a>
+                                <a href="#" className="filter__link">Shoes</a>
+                                <a href="#" className="filter__link">Sweaters &
                                     Knits</a>
-                                <a href="#" class="filter__link">T-Shirts</a>
-                                <a href="#" class="filter__link">Tanks</a>
+                                <a href="#" className="filter__link">T-Shirts</a>
+                                <a href="#" className="filter__link">Tanks</a>
                             </div>
                         </details>
                     </div>
                 </details>
             </div>
-            <div class="sort-cat">
-                <details class="sort-cat__details">
-                    <summary class="sort-cat__summary"><span
-                        class="sort-cat__heading ">TRENDING NOW</span>
+            <div className="sort-cat">
+                <details className="sort-cat__details">
+                    <summary className="sort-cat__summary"><span
+                        className="sort-cat__heading ">TRENDING NOW</span>
                         <svg width="11" height="5" viewBox="0 0 11 5"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -85,9 +85,9 @@ function FilterSort() {
                         </svg>
                     </summary>
                 </details>
-                <details class="sort-cat__details">
-                    <summary class="sort-cat__summary"><span
-                        class="sort-cat__heading">SIZE</span>
+                <details className="sort-cat__details">
+                    <summary className="sort-cat__summary"><span
+                        className="sort-cat__heading">SIZE</span>
                         <svg width="11" height="5" viewBox="0 0 11 5"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -95,28 +95,28 @@ function FilterSort() {
                                 fill="#6F6E6E" />
                         </svg>
                     </summary>
-                    <div class="sort-cat__box">
-                        <div class="sort-cat__check">
+                    <div className="sort-cat__box">
+                        <div className="sort-cat__check">
                             <input id="sort-cart__check1" type="checkbox" />
-                            <label for="sort-cart__check1">XS</label>
+                            <label htmlFor="sort-cart__check1">XS</label>
                         </div>
-                        <div class="sort-cat__check">
+                        <div className="sort-cat__check">
                             <input id="sort-cart__check2" type="checkbox" />
-                            <label for="sort-cart__check2">S</label>
+                            <label htmlFor="sort-cart__check2">S</label>
                         </div>
-                        <div class="sort-cat__check">
+                        <div className="sort-cat__check">
                             <input id="sort-cart__check3" type="checkbox" />
-                            <label for="sort-cart__check3">M</label>
+                            <label htmlFor="sort-cart__check3">M</label>
                         </div>
-                        <div class="sort-cat__check">
+                        <div className="sort-cat__check">
                             <input id="sort-cart__check4" type="checkbox" />
-                            <label for="sort-cart__check4">L</label>
+                            <label htmlFor="sort-cart__check4">L</label>
                         </div>
                     </div>
                 </details>
-                <details class="sort-cat__details">
-                    <summary class="sort-cat__summary"><span
-                        class="sort-cat__heading">PRICE</span>
+                <details className="sort-cat__details">
+                    <summary className="sort-cat__summary"><span
+                        className="sort-cat__heading">PRICE</span>
                         <svg width="11" height="5" viewBox="0 0 11 5"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path

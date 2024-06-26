@@ -702,6 +702,7 @@
   color: #636363;
   font-size: 18px;
   font-weight: 400;
+  text-align: center;
 }
 .cart-box__product-box__button-box {
   display: flex;
