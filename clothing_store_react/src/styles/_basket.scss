@@ -209,7 +209,7 @@
             position: relative;
 
             &__sub-total {
-                width: 108px;
+                // width: 108px;
                 height: 12px;
                 color: #4A4A4A;
                 font-size: 11px;
@@ -218,11 +218,12 @@
                 top: 39px;
                 right: 34px;
                 display: flex;
-                justify-content: space-between;
+                // justify-content: space-between;
+                gap: 18px;
             }
 
             &__grand-total {
-                width: 170px;
+                // width: 170px;
                 height: 19px;
                 color: $mainDark;
                 font-size: 16px;
@@ -231,7 +232,7 @@
                 top: 64px;
                 right: 34px;
                 display: flex;
-                justify-content: space-between;
+                gap: 18px;
             }
 
             &__line {

@@ -813,7 +813,6 @@
   position: relative;
 }
 .cart-box__order-details__checkout__sub-total {
-  width: 108px;
   height: 12px;
   color: #4A4A4A;
   font-size: 11px;
@@ -822,10 +821,9 @@
   top: 39px;
   right: 34px;
   display: flex;
-  justify-content: space-between;
+  gap: 18px;
 }
 .cart-box__order-details__checkout__grand-total {
-  width: 170px;
   height: 19px;
   color: #222;
   font-size: 16px;
@@ -834,7 +832,7 @@
   top: 64px;
   right: 34px;
   display: flex;
-  justify-content: space-between;
+  gap: 18px;
 }
 .cart-box__order-details__checkout__line {
   position: absolute;
