@@ -1,15 +1,13 @@
-import { useContext, useState } from "react";
-import { CheckBoxSort } from "./CatalogPage";
+import { useDispatch } from "react-redux";
+import { changeCheckboxs } from "../reducers/checkboxsSlice";
 
 function SortCatBox() {
 
-    const checBoxList = useContext(CheckBoxSort);
+    const dispatch = useDispatch();
 
-    const [isChecked, setIsChecked] = useState(checBoxList);
-
-    const handleSingleCheck = e => {
-        setIsChecked({ ...isChecked, [e.target.id]: e.target.checked });
-    };
+    const handleSingleCheck = (e) => {
+        dispatch(changeCheckboxs({ id: e.target.closest('div').lastElementChild.textContent, checked: e.target.checked }));
+    }
 
     return (
         <div className="sort-cat__box">
