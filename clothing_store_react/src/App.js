@@ -23,6 +23,9 @@ function App() {
           <Route path='/women' element={
             <Chapter.Provider value={'women'}><CatalogPage /></Chapter.Provider>
           } />
+          <Route path='/kids' element={
+            <Chapter.Provider value={'kids'}><CatalogPage /></Chapter.Provider>
+          } />
         </Routes>
       </Provider>
     </div>

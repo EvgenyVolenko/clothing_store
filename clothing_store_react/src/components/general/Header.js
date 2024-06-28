@@ -31,7 +31,7 @@ function Header() {
                         <h2>MENU</h2>
                         <Link to='/men'>MEN</Link>
                         <Link to='/women'>WOMEN</Link>
-                        <a href='#'>KIDS</a>
+                        <Link to='/kids'>KIDS</Link>
                     </details>
                 </li>
                 <li className="header__right__item display-none">
