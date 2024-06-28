@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className="header center">
             <div className="header__left">
-                <a href="index.html"><img src={header_logo} alt="logo" /></a>
+                <Link to='/'><img src={header_logo} alt="logo" /></Link>
                 <a href="#" className="header__left__magnifier">
                     <svg width="26"
                         height="27" viewBox="0 0 26 27" fill="none"
@@ -57,7 +57,6 @@ function Header() {
                     </Link>
                 </li>
             </ul>
-
         </header>
     );
 }

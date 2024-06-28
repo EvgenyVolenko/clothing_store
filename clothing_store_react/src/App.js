@@ -15,7 +15,7 @@ function App() {
     <div className='base'>
       <Provider store={store}>
         <Routes>
-          <Route path='*' element={<StartPage />} />
+          <Route path='/' element={<StartPage />} />
           <Route path='/basket' element={<BasketPage />} />
           <Route path='/men' element={
             <Chapter.Provider value={'men'}><CatalogPage /></Chapter.Provider>
