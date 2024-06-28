@@ -7,8 +7,8 @@ export const purchasesSlice = createSlice({
         obj: {}
     },
     reducers: {
-        changePurchase: (state, { payload: { productId, quantity } }) => {
-            state.obj = { ...state.obj, [productId]: quantity };
+        changePurchase: (state, { payload: { productId, product, quantity = 1 } }) => {
+            state.obj = { ...state.obj, [productId]: [product, quantity] };
         },
         deletPurchase: (state, { payload: productId }) => {
             delete state.obj[productId];

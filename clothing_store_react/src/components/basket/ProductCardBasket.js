@@ -1,6 +1,17 @@
+import { useState } from 'react';
 import CloseCrossSVG from './CloseCrossSVG';
+import { useDispatch } from 'react-redux';
+import { changePurchase } from '../reducers/purchasesSlice';
 
-function ProductCardBasket({ product }) {
+function ProductCardBasket({ product, quantityStart }) {
+
+    const [quantity, setQuantity] = useState(quantityStart);
+    const dispatch = useDispatch();
+
+    const changequantity = (e, product) => {
+        setQuantity(e.target.value);
+        dispatch(changePurchase({ productId: product.id, product: product, quantity: e.target.value }));
+    }
 
     return (
         <li><div className="cart-box__product-box__item">
@@ -21,7 +32,7 @@ function ProductCardBasket({ product }) {
                     <li>Size: {product.size}</li>
                     <li
                         className="cart-box__product-box__quantity-flex">Quantity:
-                        <input type='number' min={0} max={99} className="cart-box__product-box__quantity"></input>
+                        <input onChange={(e) => (changequantity(e, product))} type='number' min={0} max={99} className="cart-box__product-box__quantity" defaultValue={quantity}></input>
                     </li>
                 </ul>
             </div>

@@ -1,6 +1,14 @@
+import { useDispatch } from 'react-redux';
 import ToBasketButtonSVG from './ToBasketButtonSVG';
+import { changePurchase } from '../reducers/purchasesSlice';
 
 function ProductCardLarge({ product }) {
+
+    const dispatch = useDispatch();
+
+    const productToBasket = (element) => {
+        dispatch(changePurchase({ productId: element.id, product: element }));
+    }
 
     return (
         <article className="catalog__item">
@@ -8,7 +16,7 @@ function ProductCardLarge({ product }) {
             <div className="catalog__item_selected">
                 <img src={require("../../img/" + product.img_src)} alt={product.img_alt} />
 
-                <button className="catalog__cart__button">
+                <button className="catalog__cart__button" onClick={() => (productToBasket(product))}>
                     <ToBasketButtonSVG />
                     <span>Add to Cart</span>
                 </button>
