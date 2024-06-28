@@ -1,9 +1,11 @@
 import { useSelector } from 'react-redux';
 import ProductCardLarge from '../general/ProductCardLarge';
+import { useContext } from 'react';
+import { Chapter } from '../../App';
 
 function CatalogCatalog() {
 
-    const chapter = 'women';
+    const chapter = useContext(Chapter);
 
     const products = useSelector(state => state.products.array);
 

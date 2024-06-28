@@ -99,9 +99,19 @@ li::-webkit-details-marker {
         align-items: center;
         cursor: pointer;
         list-style-type: none;
+        position: relative;
 
         &__item {
             transition: 0.3s;
+
+            &__burger {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                margin-top: -11px;
+                margin-left: -33px;
+                gap: 32px;
+            }
         }
 
         &__item:hover {
