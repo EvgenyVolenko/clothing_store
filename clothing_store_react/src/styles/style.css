@@ -719,6 +719,7 @@
   border: 1px solid #A4A4A4;
   box-sizing: border-box;
   transition: 0.4s;
+  background-color: #fff;
 }
 .cart-box__product-box__button:hover {
   color: #FFF;

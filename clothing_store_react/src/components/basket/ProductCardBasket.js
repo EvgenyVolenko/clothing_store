@@ -1,16 +1,20 @@
 import { useState } from 'react';
 import CloseCrossSVG from './CloseCrossSVG';
 import { useDispatch } from 'react-redux';
-import { changePurchase } from '../reducers/purchasesSlice';
+import { changePurchase, deletPurchase } from '../reducers/purchasesSlice';
 
 function ProductCardBasket({ product, quantityStart }) {
 
     const [quantity, setQuantity] = useState(quantityStart);
     const dispatch = useDispatch();
 
-    const changequantity = (e, product) => {
+    const changeQuantity = (e, product) => {
         setQuantity(e.target.value);
         dispatch(changePurchase({ productId: product.id, product: product, quantity: e.target.value }));
+    }
+
+    const deleteProduct = (id) => {
+        dispatch(deletPurchase(id));
     }
 
     return (
@@ -21,7 +25,7 @@ function ProductCardBasket({ product, quantityStart }) {
                 className="cart-box__product-box__description">
                 <div className="cart-box__product-box__name">{product.catalog__cart__name}</div>
                 <div
-                    className="cart-box__product-box__close">
+                    className="cart-box__product-box__close" onClick={() => deleteProduct(product.id)}>
                     <CloseCrossSVG />
                 </div>
                 <ul
@@ -32,7 +36,7 @@ function ProductCardBasket({ product, quantityStart }) {
                     <li>Size: {product.size}</li>
                     <li
                         className="cart-box__product-box__quantity-flex">Quantity:
-                        <input onChange={(e) => (changequantity(e, product))} type='number' min={0} max={99} className="cart-box__product-box__quantity" defaultValue={quantity}></input>
+                        <input onChange={(e) => (changeQuantity(e, product))} type='number' min={0} max={99} className="cart-box__product-box__quantity" defaultValue={quantity}></input>
                     </li>
                 </ul>
             </div>

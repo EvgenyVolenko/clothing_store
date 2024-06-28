@@ -11,10 +11,14 @@ export const purchasesSlice = createSlice({
             state.obj = { ...state.obj, [productId]: [product, quantity] };
         },
         deletPurchase: (state, { payload: productId }) => {
+            console.log(productId);
             delete state.obj[productId];
+        },
+        clearPurchase: (state) => {
+            state.obj = {};
         }
     }
 });
 
-export const { changePurchase, deletPurchase } = purchasesSlice.actions;
+export const { changePurchase, deletPurchase, clearPurchase } = purchasesSlice.actions;
 export default purchasesSlice.reducer;

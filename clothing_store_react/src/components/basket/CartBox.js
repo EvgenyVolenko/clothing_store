@@ -1,7 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import ProductCardBasket from './ProductCardBasket';
+import { clearPurchase } from '../reducers/purchasesSlice';
 
 function CartBox() {
+
+    const dispatch = useDispatch();
 
     let newArray = [];
 
@@ -17,6 +20,10 @@ function CartBox() {
         grandTotal += element[0].catalog__cart__price * element[1];
     });
 
+    const clearBasket = () => {
+        dispatch(clearPurchase());
+    }
+
     return (
 
         <div className="cart-box center">
@@ -27,9 +34,9 @@ function CartBox() {
                     }
                 </ul>
                 <div className="cart-box__product-box__button-box">
-                    <a href="#" className="cart-box__product-box__button">
+                    <button className="cart-box__product-box__button" onClick={() => clearBasket()}>
                         <p className="uppercase">CLEAR SHOPPING CART</p>
-                    </a>
+                    </button>
                     <a href="#" className="cart-box__product-box__button">
                         <p className="uppercase">CONTINUE SHOPPING</p>
                     </a>
