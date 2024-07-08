@@ -17,9 +17,9 @@ function Header() {
             </div>
 
             <ul className="header__right">
-                <li className="header__right__item">
+                <li>
                     <details className='header__right__item__burger'>
-                        <summary>
+                        <summary className="header__right__item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32"
                                 height="23"
                                 viewBox="0 0 32 23" fill="none">
@@ -28,10 +28,47 @@ function Header() {
                                     fill="#E8E8E8" />
                             </svg>
                         </summary>
-                        <h2>MENU</h2>
-                        <Link to='/men'>MEN</Link>
-                        <Link to='/women'>WOMEN</Link>
-                        <Link to='/kids'>KIDS</Link>
+
+                        <div className='site_menu'>
+                            <h2 className='site_menu__heading'>MENU</h2>
+                            <details open>
+                                <summary className='site_menu__category'>
+                                    <Link to='/men'>MEN</Link>
+                                </summary>
+                                <div className="filter__link-box site_menu__category__content">
+                                    <a href="#" className="filter__link">Accessories</a>
+                                    <a href="#" className="filter__link">Bags</a>
+                                    <a href="#" className="filter__link">Denim</a>
+                                    <a href="#" className="filter__link">T-Shirts</a>
+                                </div>
+                            </details>
+                            <details open>
+                                <summary className='site_menu__category'>
+                                    <Link to='/women'>WOMEN</Link>
+                                </summary>
+                                <div className="filter__link-box site_menu__category__content">
+                                    <a href="#" className="filter__link">Accessories</a>
+                                    <a href="#" className="filter__link">Jackets & Coats</a>
+                                    <a href="#" className="filter__link">Polos</a>
+                                    <a href="#" className="filter__link">T-Shirts</a>
+                                    <a href="#" className="filter__link">Shirts</a>
+                                </div>
+                            </details>
+                            <details open>
+                                <summary className='site_menu__category'>
+                                    <Link to='/kids'>KIDS</Link>
+                                </summary>
+                                <div className="filter__link-box site_menu__category__content">
+                                    <a href="#" className="filter__link">Accessories</a>
+                                    <a href="#" className="filter__link">Jackets & Coats</a>
+                                    <a href="#" className="filter__link">Polos</a>
+                                    <a href="#" className="filter__link">T-Shirts</a>
+                                    <a href="#" className="filter__link">Shirts</a>
+                                    <a href="#" className="filter__link">Bags</a>
+                                </div>
+                            </details>
+                        </div>
+
                     </details>
                 </li>
                 <li className="header__right__item display-none">
